@@ -1,0 +1,39 @@
+{
+    "id": "pantone",
+    "title": "Pantone",
+    "year": 2018,
+    "cover": "/images/albums/pantone.jpg",
+    "description": "El segundo álbum de No Rules Clan. Pantone representa la evolución del grupo sin perder las raíces ni la esencia. Con más barba, más años y más experiencia, NRS entrega un disco con sonidos más maduros pero igual de callejeros.",
+    "tracks": [
+        {
+            "name": "NRS In Da Area",
+            "duration": "3:55"
+        },
+        {
+            "name": "Pantone",
+            "duration": "4:10"
+        },
+        {
+            "name": "Camión de la Basura",
+            "duration": "3:48"
+        },
+        {
+            "name": "En Tono Sepia",
+            "duration": "4:22"
+        },
+        {
+            "name": "Royal Rumble",
+            "duration": "3:37"
+        },
+        {
+            "name": "Quién Va",
+            "duration": "4:01"
+        },
+        {
+            "name": "Código",
+            "duration": "3:45"
+        }
+    ],
+    "spotifyLink": "https://open.spotify.com/artist/6i28S1MHCSNJtufoq0DnPv",
+    "buyLink": "#"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "rap-nativo",
+  "title": "Rap Nativo",
+  "year": 2012,
+  "cover": "/images/albums/rap-nativo.jpg",
+  "description": "El debut de No Rules Clan. Un disco que marcó un antes y un después en el rap antioqueño. Producido junto a Zof Ziro en el estudio Moebiuz, Rap Nativo es la declaración de principios de un grupo que llegó para cambiar las reglas del juego.",
+  "tracks": [
+    { "name": "Intro", "duration": "1:30" },
+    { "name": "Rap Nativo", "duration": "3:45" },
+    { "name": "El Mañas", "duration": "4:12" },
+    { "name": "La Helada Hoguera", "duration": "3:58" },
+    { "name": "Sornera-mente", "duration": "4:20" },
+    { "name": "NRS", "duration": "3:33" },
+    { "name": "Calle", "duration": "4:05" },
+    { "name": "Sin Reglas", "duration": "3:50" }
+  ],
+  "spotifyLink": "https://open.spotify.com/artist/6i28S1MHCSNJtufoq0DnPv",
+  "buyLink": "#"
+}
