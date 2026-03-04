@@ -1,39 +1,66 @@
 {
     "id": "pantone",
     "title": "Pantone",
-    "year": 2018,
-    "cover": "/images/albums/pantone.jpg",
-    "description": "El segundo álbum de No Rules Clan. Pantone representa la evolución del grupo sin perder las raíces ni la esencia. Con más barba, más años y más experiencia, NRS entrega un disco con sonidos más maduros pero igual de callejeros.",
+    "artist": "No Rules Clan",
+    "year": 2019,
+    "price": 80000,
+    "currency": "COP",
+    "cover": "/images/albums/pantone.png",
+    "description": "Grabado en Ignorancia Sofisticada, es un disco lleno de los colores más chimbas del rap, desde el drumless asesino con samples de plancha hasta los tonos más coloridos y saltarines. Además de una selección excelsa de beats, cortesía de Vic Deal, El Arkeologo, Sison Beats y D.J.H.“ —S. Cembrano",
     "tracks": [
         {
+            "name": "Intro (Bien Pueda)",
+            "duration": ""
+        },
+        {
             "name": "NRS In Da Area",
-            "duration": "3:55"
+            "duration": ""
         },
         {
-            "name": "Pantone",
-            "duration": "4:10"
+            "name": "Give Me The Loop",
+            "duration": ""
         },
         {
-            "name": "Camión de la Basura",
-            "duration": "3:48"
+            "name": "Jet Ski (Ft. Vic Deal)",
+            "duration": ""
         },
         {
-            "name": "En Tono Sepia",
-            "duration": "4:22"
+            "name": "Veladas de Rap",
+            "duration": ""
         },
         {
-            "name": "Royal Rumble",
-            "duration": "3:37"
+            "name": "Desert Eagle (Ft. DJ Z-Kruel)",
+            "duration": ""
         },
         {
-            "name": "Quién Va",
-            "duration": "4:01"
+            "name": "Skit (Ft. Vic Deal)",
+            "duration": ""
         },
         {
-            "name": "Código",
-            "duration": "3:45"
+            "name": "Quién Va (Ft. Alcolirykoz)",
+            "duration": ""
+        },
+        {
+            "name": "Toto Rina",
+            "duration": ""
+        },
+        {
+            "name": "Gota Gota",
+            "duration": ""
+        },
+        {
+            "name": "El Grupo",
+            "duration": ""
+        },
+        {
+            "name": "Pantone (Ft. DJ Mad Pee)",
+            "duration": ""
+        },
+        {
+            "name": "Pico y Chao",
+            "duration": ""
         }
     ],
-    "spotifyLink": "https://open.spotify.com/artist/6i28S1MHCSNJtufoq0DnPv",
+    "spotifyLink": "https://open.spotify.com/album/4vS77G3K09537u3I750fB7",
     "buyLink": "#"
 }

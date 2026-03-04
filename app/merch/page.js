@@ -1,13 +1,10 @@
 import merch from '@/data/merch.json';
+import MerchCard from '@/components/MerchCard';
 
 export const metadata = {
     title: 'Merch — No Rules Clan',
     description: 'Merchandising oficial de No Rules Clan. Camisetas, hoodies, gorras y más.',
 };
-
-function formatPrice(price, currency) {
-    return new Intl.NumberFormat('es-CO', { style: 'currency', currency, minimumFractionDigits: 0 }).format(price);
-}
 
 export default function MerchPage() {
     return (
@@ -24,26 +21,7 @@ export default function MerchPage() {
                 <div className="container">
                     <div className="merch-grid">
                         {merch.map((item) => (
-                            <div key={item.id} className="merch-card">
-                                <div className="merch-image">
-                                    <div className="merch-placeholder">{item.name.split(' ').map(w => w[0]).join('')}</div>
-                                </div>
-                                <div className="merch-info">
-                                    <h3 className="merch-name" style={{ fontFamily: 'var(--font-heading)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                                        {item.name}
-                                    </h3>
-                                    <p className="merch-price">{formatPrice(item.price, item.currency)}</p>
-                                    <p className="merch-desc">{item.description}</p>
-                                    <div className="merch-sizes">
-                                        {item.sizes.map((size) => (
-                                            <span key={size} className="merch-size">{size}</span>
-                                        ))}
-                                    </div>
-                                    <a href={item.buyLink} className="btn btn-sm btn-filled" style={{ width: '100%', justifyContent: 'center' }}>
-                                        Comprar
-                                    </a>
-                                </div>
-                            </div>
+                            <MerchCard key={item.id} item={item} />
                         ))}
                     </div>
                 </div>

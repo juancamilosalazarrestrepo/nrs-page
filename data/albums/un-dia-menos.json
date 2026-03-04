@@ -1,0 +1,38 @@
+{
+    "id": "un-dia-menos",
+    "title": "Un Día Menos",
+    "artist": "Cualkiera & El Arkeólogo",
+    "year": 2017,
+    "price": 80000,
+    "currency": "COP",
+    "cover": "/images/albums/Un-dia-menos.webp",
+    "description": "EP en colaboración entre Cualkiera y El Arkeólogo, marcando las horas del día.",
+    "tracks": [
+        {
+            "name": "Intro (9:15 AM) (Ft. Fa-Zeta)",
+            "duration": ""
+        },
+        {
+            "name": "Motherno (10:30 AM) (Ft. Crow The Selektor)",
+            "duration": ""
+        },
+        {
+            "name": "Otro Tema (4:40 PM) (Ft. Dj Dmoe)",
+            "duration": ""
+        },
+        {
+            "name": "Valenciano (11:11 PM) (Ft. Dj Z Kruel)",
+            "duration": ""
+        },
+        {
+            "name": "Por La Sombra (3:32 AM) (Ft. Dj Jhoend)",
+            "duration": ""
+        },
+        {
+            "name": "Outro (5:03 AM)",
+            "duration": ""
+        }
+    ],
+    "spotifyLink": "",
+    "buyLink": "#"
+}

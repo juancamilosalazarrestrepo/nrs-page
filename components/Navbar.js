@@ -21,8 +21,9 @@ export default function Navbar() {
 
   const links = [
     { href: '/', label: 'Inicio' },
+    { href: '/#new', label: 'Lo Nuevo' },
     { href: '/#about', label: 'Nosotros' },
-    { href: '/albums', label: 'Álbumes' },
+    { href: '/albums', label: 'Catálogo' },
     { href: '/merch', label: 'Merch' },
     { href: '/videos', label: 'Videos' },
     { href: '/galeria', label: 'Galería' },
@@ -33,7 +34,7 @@ export default function Navbar() {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container">
           <Link href="/" className="nav-logo">
-            <Image src="/images/logoNRS.png" alt="No Rules Clan" width={120} height={40} style={{ height: '40px', width: 'auto' }} />
+            <Image src="/images/logoTransparent.png" alt="No Rules Clan" width={120} height={40} style={{ height: '40px', width: 'auto' }} />
           </Link>
           <ul className="nav-links">
             {links.map((link) => (

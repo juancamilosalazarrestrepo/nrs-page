@@ -1,62 +1,46 @@
 [
     {
-        "id": "camiseta-nrs-classic",
-        "name": "Camiseta NRS Classic",
-        "price": 80000,
+        "id": "camisa-nrs",
+        "name": "Camisa",
+        "price": 120000,
         "currency": "COP",
-        "image": "/images/merch/camiseta-nrs.jpg",
+        "image": "/images/merch/camisa.jpg",
+        "gallery": [
+            "/images/merch/camisa.jpg",
+            "/images/merch/camisagalery1.jpg",
+            "/images/merch/camisagalery2.jpg",
+            "/images/merch/camisagalery3.jpg",
+            "/images/merch/camisagalery4.jpg"
+        ],
         "sizes": [
             "S",
             "M",
             "L",
             "XL"
         ],
-        "description": "Camiseta negra con logo No Rules Clan bordado. 100% algodón.",
+        "description": "Camisa oficial de No Rules Clan. Diseño exclusivo.",
         "buyLink": "#",
-        "category": "camisetas"
+        "category": "camisas"
     },
     {
-        "id": "hoodie-nrs-pantone",
-        "name": "Hoodie NRS Pantone",
-        "price": 150000,
+        "id": "camiseta-nrs",
+        "name": "Camiseta",
+        "price": 100000,
         "currency": "COP",
-        "image": "/images/merch/hoodie-nrs.jpg",
+        "image": "/images/merch/camiseta.jpg",
+        "gallery": [
+            "/images/merch/camiseta.jpg",
+            "/images/merch/camisetaGallery.jpg",
+            "/images/merch/camisetaGallery2.jpg",
+            "/images/merch/camisetaGallery3.jpg"
+        ],
         "sizes": [
             "S",
             "M",
             "L",
             "XL"
         ],
-        "description": "Hoodie negra edición Pantone. Diseño exclusivo con gráficos del álbum.",
-        "buyLink": "#",
-        "category": "hoodies"
-    },
-    {
-        "id": "gorra-nrs",
-        "name": "Gorra NRS Snapback",
-        "price": 60000,
-        "currency": "COP",
-        "image": "/images/merch/gorra-nrs.jpg",
-        "sizes": [
-            "Única"
-        ],
-        "description": "Gorra snapback negra con logo NRS bordado en frente.",
-        "buyLink": "#",
-        "category": "accesorios"
-    },
-    {
-        "id": "camiseta-rap-nativo",
-        "name": "Camiseta Rap Nativo",
-        "price": 80000,
-        "currency": "COP",
-        "image": "/images/merch/camiseta-rap-nativo.jpg",
-        "sizes": [
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "description": "Camiseta edición especial Rap Nativo. Arte original del primer disco.",
+        "description": "Camiseta oficial de No Rules Clan. 100% algodón.",
         "buyLink": "#",
         "category": "camisetas"
     }

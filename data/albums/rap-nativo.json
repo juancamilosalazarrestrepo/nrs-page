@@ -1,18 +1,45 @@
 {
   "id": "rap-nativo",
   "title": "Rap Nativo",
+  "artist": "No Rules Clan",
   "year": 2012,
+  "price": 80000,
+  "currency": "COP",
   "cover": "/images/albums/rap-nativo.jpg",
   "description": "El debut de No Rules Clan. Un disco que marcó un antes y un después en el rap antioqueño. Producido junto a Zof Ziro en el estudio Moebiuz, Rap Nativo es la declaración de principios de un grupo que llegó para cambiar las reglas del juego.",
   "tracks": [
-    { "name": "Intro", "duration": "1:30" },
-    { "name": "Rap Nativo", "duration": "3:45" },
-    { "name": "El Mañas", "duration": "4:12" },
-    { "name": "La Helada Hoguera", "duration": "3:58" },
-    { "name": "Sornera-mente", "duration": "4:20" },
-    { "name": "NRS", "duration": "3:33" },
-    { "name": "Calle", "duration": "4:05" },
-    { "name": "Sin Reglas", "duration": "3:50" }
+    {
+      "name": "No Rules en las Aceras",
+      "duration": "1:55"
+    },
+    {
+      "name": "Siempre Más",
+      "duration": "2:05"
+    },
+    {
+      "name": "Música de Fondo",
+      "duration": "2:19"
+    },
+    {
+      "name": "Rap Nativo (con Dj Fazeta)",
+      "duration": "2:18"
+    },
+    {
+      "name": "En Tono Sepia",
+      "duration": "2:24"
+    },
+    {
+      "name": "La Helada Hoguera (con Dj Fazeta)",
+      "duration": "2:48"
+    },
+    {
+      "name": "Rapsurf / Quartoemilla",
+      "duration": "2:08"
+    },
+    {
+      "name": "Salida No Es Despedida (con Dj Fazeta)",
+      "duration": "1:28"
+    }
   ],
   "spotifyLink": "https://open.spotify.com/artist/6i28S1MHCSNJtufoq0DnPv",
   "buyLink": "#"

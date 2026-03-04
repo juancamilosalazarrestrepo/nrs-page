@@ -1,0 +1,50 @@
+{
+    "id": "welcome-to-the-world-of-nemesis",
+    "title": "Welcome to the World of Nemesis",
+    "artist": "Sison Beats",
+    "year": 2019,
+    "price": 80000,
+    "currency": "COP",
+    "cover": "/images/albums/welcome to the worl of nemesis.jpg",
+    "description": "Álbum de Sison Beats, una muestra de su talento en la producción y rimas.",
+    "tracks": [
+        {
+            "name": "Guess Who's Back",
+            "duration": ""
+        },
+        {
+            "name": "33 Hi Top",
+            "duration": ""
+        },
+        {
+            "name": "Cromo",
+            "duration": ""
+        },
+        {
+            "name": "You Know (Ft. Vic Deal)",
+            "duration": ""
+        },
+        {
+            "name": "Misil Afgano",
+            "duration": ""
+        },
+        {
+            "name": "High Lights (Ft. N. Hardem)",
+            "duration": ""
+        },
+        {
+            "name": "Haute Couture / Your Song",
+            "duration": ""
+        },
+        {
+            "name": "Grupo Niche",
+            "duration": ""
+        },
+        {
+            "name": "La Bomba De La Plaza / Producto Interno Bruto",
+            "duration": ""
+        }
+    ],
+    "spotifyLink": "",
+    "buyLink": "#"
+}

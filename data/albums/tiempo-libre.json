@@ -1,0 +1,50 @@
+{
+    "id": "tiempo-libre",
+    "title": "Tiempo Libre",
+    "artist": "Anyone / Cualkiera",
+    "year": 2014,
+    "price": 80000,
+    "currency": "COP",
+    "cover": "/images/albums/tiempo-libre.png",
+    "description": "Un viaje sonoro que invita a la reflexión, con la participación de grandes de la escena local.",
+    "tracks": [
+        {
+            "name": "Viento Constante (Ft. Gambeta)",
+            "duration": ""
+        },
+        {
+            "name": "Word is Bond",
+            "duration": ""
+        },
+        {
+            "name": "Oriundo (Ft. Zof Ziro)",
+            "duration": ""
+        },
+        {
+            "name": "El Último Orador",
+            "duration": ""
+        },
+        {
+            "name": "Híbrido (Ft. N. Hardem)",
+            "duration": ""
+        },
+        {
+            "name": "En Cualquier Parte",
+            "duration": ""
+        },
+        {
+            "name": "Centro de Acopio (Ft. Rapiphero)",
+            "duration": ""
+        },
+        {
+            "name": "Una Toma",
+            "duration": ""
+        },
+        {
+            "name": "Camino Solo (Bonus)",
+            "duration": ""
+        }
+    ],
+    "spotifyLink": "",
+    "buyLink": "#"
+}

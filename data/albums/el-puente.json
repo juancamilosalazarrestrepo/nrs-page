@@ -1,0 +1,58 @@
+{
+    "id": "el-puente",
+    "title": "El Puente",
+    "artist": "No Rules Clan",
+    "year": 2022,
+    "price": 80000,
+    "currency": "COP",
+    "cover": "/images/albums/el.puente.jpg",
+    "description": "Álbum en el que No Rules Clan demuestra su vigencia... con grandes colaboraciones como N-Wise Allah, CRIMEAPPLE, Al.Divino y más.",
+    "tracks": [
+        {
+            "name": "El Puente (Ft. Z Kruel)",
+            "duration": ""
+        },
+        {
+            "name": "Mago Báez",
+            "duration": ""
+        },
+        {
+            "name": "Spaghetti Western",
+            "duration": ""
+        },
+        {
+            "name": "El Camión De La Basura (Ft. N-Wise Allah)",
+            "duration": ""
+        },
+        {
+            "name": "Modo Sport (Ft. RLX)",
+            "duration": ""
+        },
+        {
+            "name": "Garrafa (Ft. Primo Profit)",
+            "duration": ""
+        },
+        {
+            "name": "Konami",
+            "duration": ""
+        },
+        {
+            "name": "Último Día (Ft. Al.Divino)",
+            "duration": ""
+        },
+        {
+            "name": "Fritanga (Ft. CRIMEAPPLE)",
+            "duration": ""
+        },
+        {
+            "name": "Phillie Steaks (Ft. Da Buze Bruvaz)",
+            "duration": ""
+        },
+        {
+            "name": "Tito Puente",
+            "duration": ""
+        }
+    ],
+    "spotifyLink": "",
+    "buyLink": "#"
+}

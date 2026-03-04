@@ -21,24 +21,36 @@ const galleryImages = [
 
 export default function Home() {
   const [lightbox, setLightbox] = useState(null);
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
     <>
       {/* ===== HERO ===== */}
       <section className="hero" id="hero">
-        <div className="hero-bg">
+        {/* Imagen de fondo (placeholder mientras carga el video) */}
+        <div className={`hero-bg ${videoLoaded ? 'hero-bg-hidden' : ''}`}>
           <Image
-            src="/images/533046756_18414233440110732_6890116422541346884_n.jpg"
+            src="/images/504188056_18405323272110732_7471875594620275783_n.jpg"
             alt="No Rules Clan"
             fill
             priority
             style={{ objectFit: 'cover', objectPosition: 'center top' }}
           />
         </div>
+        {/* Video de YouTube como fondo */}
+        <div className={`hero-video-bg ${videoLoaded ? 'hero-video-loaded' : ''}`}>
+          <iframe
+            src="https://www.youtube.com/embed/sYACeqlvPfs?autoplay=1&mute=1&loop=1&playlist=sYACeqlvPfs&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&iv_load_policy=3"
+            title="No Rules Clan - Bisiestos"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            frameBorder="0"
+            onLoad={() => setVideoLoaded(true)}
+          ></iframe>
+        </div>
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="hero-logo">
-            <Image src="/images/logoNRS.png" alt="NRS Logo" width={180} height={180} style={{ width: '180px', height: 'auto' }} />
+            <Image src="/images/logoTransparent.png" alt="NRS Logo" width={180} height={180} style={{ width: '180px', height: 'auto' }} />
           </div>
           <h1 className="hero-title">No Rules Clan</h1>
           <p className="hero-tagline">Medellín · Envigado · Colombia</p>
@@ -50,6 +62,31 @@ export default function Home() {
         <div className="hero-scroll">
           <span>Scroll</span>
           <div className="hero-scroll-line"></div>
+        </div>
+      </section>
+
+      {/* ===== LO NUEVO (FEATURED VIDEO) ===== */}
+      <section className="section" id="new" style={{ paddingBottom: '0' }}>
+        <div className="container">
+          <div className="section-divider"></div>
+          <h2 className="section-title">Lo Nuevo</h2>
+          <p className="section-subtitle">Último lanzamiento en nuestro canal oficial</p>
+
+          <div className="featured-video-container">
+            <div className="video-embed" style={{ borderRadius: '4px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.4)' }}>
+              <iframe
+                src="https://www.youtube.com/embed/sYACeqlvPfs?autoplay=0&rel=0"
+                title="No Rules Clan - Lo Nuevo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div style={{ marginTop: '24px', textAlign: 'right' }}>
+              <a href="https://www.youtube.com/watch?v=sYACeqlvPfs" target="_blank" rel="noopener noreferrer" className="btn btn-sm">
+                Ver en YouTube
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -87,7 +124,7 @@ export default function Home() {
             </div>
             <div className="about-image">
               <Image
-                src="/images/no-rules-clan-1-960x960.png"
+                src="/images/491447033_18399452008110732_490951096133746480_n.jpg"
                 alt="No Rules Clan"
                 width={600}
                 height={750}
@@ -108,7 +145,7 @@ export default function Home() {
             <div className="member-card">
               <div className="member-image">
                 <Image
-                  src="/images/546523076_18418680121110732_6732293113232190962_n.jpg"
+                  src="/images/549215808_18418680136110732_8778006134418007590_n.jpg"
                   alt="Anyone / Cualkiera"
                   width={400}
                   height={530}
@@ -127,7 +164,7 @@ export default function Home() {
             <div className="member-card">
               <div className="member-image">
                 <Image
-                  src="/images/549215808_18418680136110732_8778006134418007590_n.jpg"
+                  src="/images/546523076_18418680121110732_6732293113232190962_n.jpg"
                   alt="Sison Beats"
                   width={400}
                   height={530}

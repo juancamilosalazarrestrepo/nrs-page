@@ -1,0 +1,34 @@
+{
+    "id": "el-milagro",
+    "title": "El Milagro",
+    "artist": "Sison Beats & Luis7Lunes",
+    "year": 2020,
+    "price": 80000,
+    "currency": "COP",
+    "cover": "/images/albums/el-milagro.jpg",
+    "description": "Álbum en colaboración de Sison Beats (Nemesis) y Luis7Lunes.",
+    "tracks": [
+        {
+            "name": "El Milagro",
+            "duration": ""
+        },
+        {
+            "name": "El Pecado Original",
+            "duration": ""
+        },
+        {
+            "name": "Temperatura Ambiente",
+            "duration": ""
+        },
+        {
+            "name": "La Duda",
+            "duration": ""
+        },
+        {
+            "name": "Envío Divino (Ft. Franco Carter)",
+            "duration": ""
+        }
+    ],
+    "spotifyLink": "",
+    "buyLink": "#"
+}
