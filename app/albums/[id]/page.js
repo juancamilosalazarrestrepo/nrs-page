@@ -43,15 +43,18 @@ export default async function AlbumDetailPage({ params }) {
 
     return (
         <>
-            <div className="page-header">
+            <div className="album-detail-header">
                 <div className="container">
-                    <Link href="/albums" className="album-back-link">
-                        ← Volver al catálogo
+                    <Link href="/albums" className="album-back-link" aria-label="Volver al catálogo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M19 12H5M12 19l-7-7 7-7" />
+                        </svg>
+                        <span className="album-back-text">Volver al catálogo</span>
                     </Link>
                 </div>
             </div>
 
-            <section className="section" style={{ paddingTop: 0 }}>
+            <section className="album-detail-section">
                 <div className="container">
                     <div className="album-detail">
                         <div className="album-detail-cover">

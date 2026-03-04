@@ -27,6 +27,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
@@ -72,6 +74,8 @@ h6 {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 24px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ===== SECTIONS ===== */
@@ -161,10 +165,12 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
   z-index: 1000;
   padding: 20px 0;
   transition: var(--transition);
   background: transparent;
+  overflow: hidden;
 }
 
 .navbar.scrolled {
@@ -230,13 +236,14 @@ h6 {
   cursor: pointer;
   background: none;
   border: none;
-  padding: 4px;
+  padding: 8px;
+  z-index: 1001;
 }
 
 .nav-toggle span {
   display: block;
   width: 24px;
-  height: 1.5px;
+  height: 2px;
   background: var(--text-primary);
   transition: var(--transition);
 }
@@ -250,7 +257,7 @@ h6 {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.98);
-  z-index: 999;
+  z-index: 9999;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -641,18 +648,31 @@ h6 {
 }
 
 /* ===== ALBUM DETAIL ===== */
+.album-detail-header {
+  padding: 100px 0 16px;
+}
+
 .album-back-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--font-body);
   font-size: 0.85rem;
   color: var(--text-secondary);
-  margin-bottom: 24px;
   transition: var(--transition);
   letter-spacing: 0.02em;
 }
 
+.album-back-link svg {
+  flex-shrink: 0;
+}
+
 .album-back-link:hover {
   color: var(--text-primary);
+}
+
+.album-detail-section {
+  padding: 0 0 100px;
 }
 
 .album-detail {
@@ -703,14 +723,31 @@ h6 {
 }
 
 @media (max-width: 768px) {
+  .album-detail-header {
+    padding: 70px 0 8px;
+  }
+
+  .album-back-text {
+    display: none;
+  }
+
+  .album-back-link {
+    padding: 8px;
+    margin: 0;
+  }
+
+  .album-detail-section {
+    padding: 8px 0 60px;
+  }
+
   .album-detail {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 24px;
   }
 
   .album-detail-cover {
     position: static;
-    max-width: 400px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -1220,9 +1257,11 @@ h6 {
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 16px 24px;
   margin-bottom: 20px;
   list-style: none;
+  flex-wrap: wrap;
+  padding: 0 16px;
 }
 
 .footer-links a {
@@ -1308,11 +1347,11 @@ h6 {
 
 @media (max-width: 768px) {
   .nav-links {
-    display: none;
+    display: none !important;
   }
 
   .nav-toggle {
-    display: flex;
+    display: flex !important;
   }
 
   .section {
