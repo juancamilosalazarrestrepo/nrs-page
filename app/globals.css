@@ -177,7 +177,6 @@ h6 {
   background: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(20px);
   padding: 12px 0;
-  border-bottom: 1px solid var(--border);
 }
 
 .navbar .container {
