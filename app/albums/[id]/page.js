@@ -3,6 +3,7 @@ import path from 'path';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import AlbumCheckoutButton from '@/components/AlbumCheckoutButton';
 
 function getAlbum(id) {
     const filePath = path.join(process.cwd(), 'data', 'albums', `${id}.json`);
@@ -94,9 +95,11 @@ export default async function AlbumDetailPage({ params }) {
                                         Escuchar en Spotify
                                     </a>
                                 )}
-                                <a href={album.buyLink && album.buyLink !== '#' ? album.buyLink : '#'} className="btn btn-filled">
-                                    Comprar Álbum
-                                </a>
+                                <AlbumCheckoutButton
+                                    title={album.title}
+                                    price={album.price || 50000}
+                                    currency={album.currency || 'COP'}
+                                />
                             </div>
                         </div>
                     </div>

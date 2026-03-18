@@ -1045,6 +1045,132 @@ h6 {
   color: var(--text-muted);
   font-family: var(--font-heading);
   letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.merch-size:hover {
+  border-color: var(--border-hover);
+  color: var(--text-secondary);
+}
+
+.merch-size.selected {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== CHECKOUT ===== */
+.checkout-container {
+  width: 100%;
+}
+
+.checkout-error {
+  color: #ff4444;
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+  font-family: var(--font-body);
+  text-align: center;
+}
+
+.checkout-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.checkout-loading {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-top-color: #000;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ===== CHECKOUT RESULT PAGES ===== */
+.checkout-result {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 24px 60px;
+}
+
+.checkout-result-card {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+}
+
+.checkout-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 28px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.checkout-result-card.success .checkout-icon {
+  background: rgba(76, 175, 80, 0.12);
+  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.checkout-result-card.pending .checkout-icon {
+  background: rgba(255, 193, 7, 0.12);
+  color: #ffc107;
+  border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.checkout-result-card.failure .checkout-icon {
+  background: rgba(244, 67, 54, 0.12);
+  color: #f44336;
+  border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+.checkout-result-title {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.checkout-result-text {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 12px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.checkout-result-secondary {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.checkout-result-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
 }
 
 /* ===== VIDEOS ===== */

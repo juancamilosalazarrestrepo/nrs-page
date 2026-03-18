@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
 import Link from 'next/link';
+import AlbumCheckoutButton from '@/components/AlbumCheckoutButton';
 
 export const metadata = {
     title: 'Catálogo — No Rules Clan',
@@ -59,9 +60,11 @@ export default function AlbumsPage() {
                                         <Link href={`/albums/${album.id}`} className="btn btn-sm">
                                             Ver Más
                                         </Link>
-                                        <a href={album.buyLink && album.buyLink !== '#' ? album.buyLink : '#'} className="btn btn-sm btn-filled">
-                                            Comprar
-                                        </a>
+                                        <AlbumCheckoutButton
+                                            title={album.title}
+                                            price={album.price || 50000}
+                                            currency={album.currency || 'COP'}
+                                        />
                                     </div>
                                 </div>
                             </div>

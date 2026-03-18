@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import CheckoutButton from './CheckoutButton';
 
 function formatPrice(price, currency) {
     return new Intl.NumberFormat('es-CO', { style: 'currency', currency, minimumFractionDigits: 0 }).format(price);
@@ -8,6 +9,7 @@ function formatPrice(price, currency) {
 
 export default function MerchCard({ item }) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [selectedSize, setSelectedSize] = useState(null);
 
     const images = item.gallery && item.gallery.length > 0 ? item.gallery : [item.image];
 
@@ -56,12 +58,19 @@ export default function MerchCard({ item }) {
                 <p className="merch-desc">{item.description}</p>
                 <div className="merch-sizes">
                     {item.sizes.map((size) => (
-                        <span key={size} className="merch-size">{size}</span>
+                        <span
+                            key={size}
+                            className={`merch-size ${selectedSize === size ? 'selected' : ''}`}
+                            onClick={() => setSelectedSize(size)}
+                            role="button"
+                            tabIndex={0}
+                            onKeyDown={(e) => e.key === 'Enter' && setSelectedSize(size)}
+                        >
+                            {size}
+                        </span>
                     ))}
                 </div>
-                <a href={item.buyLink} className="btn btn-sm btn-filled" style={{ width: '100%', justifyContent: 'center' }}>
-                    Comprar
-                </a>
+                <CheckoutButton item={item} selectedSize={selectedSize} />
             </div>
         </div>
     );
